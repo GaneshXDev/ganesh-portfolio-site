@@ -1,0 +1,48 @@
+.contact-wrapper {
+  padding: 30px;
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.contact-container {
+  width: 100%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+  gap: 30px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  background: #302f4e;
+  padding: 20px;
+  border-left: 5px solid #ff4c60;
+  border-right: 5px solid #ff4c60;
+  border-radius: 20px;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-info {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .contact-info {
+    font-size: 12px;
+  }
+}

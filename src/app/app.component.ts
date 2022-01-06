@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'client';
+  
+  screenWidth:any;
+  sidebaropen:boolean = false;
+  currentSection:string = 'section1';
+
+  constructor() {
+    this.getScreenWidth()
+  }
+
+
+  @HostListener("window:resize", ["$event"])
+  getScreenWidth() {
+    this.screenWidth = window.innerWidth
+  }
+
+  toggleSidebar(value: boolean) {
+    this.sidebaropen = value
+    console.log(this.sidebaropen)
+  }
+
 }

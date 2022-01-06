@@ -1,0 +1,173 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.parallex-img {
+  width: 40px;
+}
+
+.triangle {
+  position: absolute;
+  top: 15vh;
+  left: 20vw;
+}
+
+.triangle2 {
+  position: absolute;
+  bottom: 15vh;
+  right: 20vw;
+}
+
+.cross {
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+}
+
+.cross1 {
+  position: absolute;
+  bottom: 10vh;
+  right: 50vw;
+}
+
+.rhombus {
+  position: absolute;
+  top: 50vh;
+  left: 10vw;
+}
+
+.star {
+  position: absolute;
+  bottom: 50vh;
+  right: 10vw;
+}
+
+.home-intro-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-intro-container {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-name-box {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.home-role-box {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.home-avatar-box {
+  width: 100px;
+  height: 100px;
+}
+
+.home-contact-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.home-hire-btn {
+  width: 120px;
+  height: 40px;
+  margin-top: 40px;
+}
+
+.home-hire-btn input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background: #ffd15c;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-hire-btn input:hover {
+  background-color: #fce4a8;
+}
+
+.home-scroll-down {
+  position: absolute;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.typed-text {
+  color: #ff4c60;
+}
+
+.cursor {
+  background: #ff4c60;
+  margin-left: 3px;
+  animation: blink 0.8s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    background: #302f4e;
+  }
+  50% {
+    background: #ff4c60;
+  }
+  100% {
+    background: #302f4e;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cross1 {
+    bottom: 20vw;
+    left: 10vw;
+  }
+  .triangle2 {
+    bottom: 20vw;
+    right: 10vw;
+  }
+  .rhombus {
+    top: 30vh;
+  }
+  .star {
+    bottom: 65vh;
+  }
+  .triangle {
+    top: 12vh;
+  }
+  .cross {
+    left: 65vw;
+  }
+}
