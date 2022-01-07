@@ -14,11 +14,14 @@
     </ng-template>
     
     <ng-template>Helo</ng-template>
-    <div class="mainpanel-wrapper">
+    <div class="mainpanel-wrapper" id="main-wrapper">
         <app-home id="home"></app-home>
         <app-about id="about"></app-about>
         <app-experience id="experience"></app-experience>
         <app-skill id="skill"></app-skill>
         <app-contact id="contact"></app-contact>
     </div>
+    <div class="goto-top-wrapper" (click)="handleScrollToTop()">
+        <div class="goto-top-container"></div>
+    </div>   
 </div>

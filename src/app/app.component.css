@@ -45,3 +45,28 @@
 .header-title span {
   color: #dc3444;
 }
+
+.goto-top-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #353353;
+  border: 1px solid #dc3444;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.goto-top-container {
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid #dc3444;
+  border-bottom: 3px solid #dc3444;
+  z-index: 10;
+  transform: rotate(135deg);
+  margin-top: 5px;
+}

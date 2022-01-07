@@ -11,11 +11,19 @@ export class AppComponent {
   screenWidth:any;
   sidebaropen:boolean = false;
   currentSection:string = 'section1';
+  gototop:any;
 
   constructor() {
     this.getScreenWidth()
   }
 
+  // ngOnInit() {
+  //   window.addEventListener('scroll', this.getScrollHeight, true);
+  // }
+
+  // ngOnDestroy() {
+  //   window.removeEventListener('scroll', this.getScrollHeight, true);
+  // }
 
   @HostListener("window:resize", ["$event"])
   getScreenWidth() {
@@ -26,5 +34,16 @@ export class AppComponent {
     this.sidebaropen = value
     console.log(this.sidebaropen)
   }
+
+  handleScrollToTop() {
+    document.getElementById("home")?.scrollIntoView({ behavior: "smooth" })
+  }
+
+  // getScrollHeight(e: Event) {
+  //   let mainwrapper = e.target as HTMLElement;
+    
+  //   this.gototop = mainwrapper.scrollTop;
+  //   console.log(this.gototop)
+  // }
 
 }
